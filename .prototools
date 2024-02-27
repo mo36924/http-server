@@ -1,0 +1,7 @@
+bun = "1.0.29"
+deno = "1.41.0"
+node = "20.11.1"
+npm = "10.2.4"
+
+[settings]
+auto-install = true
