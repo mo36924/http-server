@@ -1,0 +1,17 @@
+{
+  "dockerComposeFile": "compose.yml",
+  "service": "vscode",
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": "bash .devcontainer/postCreateCommand.sh",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
+}
