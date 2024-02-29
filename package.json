@@ -1,11 +1,14 @@
 {
   "name": "@mo36924/http-server",
   "type": "module",
-  "version": "1.0.0",
+  "version": "2.3.0",
   "description": "http-server",
   "author": "mo36924 <mo36924@users.noreply.github.com>",
   "license": "MIT",
-  "repository": "https://github.com/mo36924/http-server.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mo36924/http-server.git"
+  },
   "keywords": [],
   "exports": {
     ".": {
@@ -21,6 +24,9 @@
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "run-s clean build:*",
     "build:rollup": "rollup -c",
@@ -34,6 +40,9 @@
     "test:bun": "bun test src/bun.test.ts",
     "test:deno": "deno test --allow-net --unstable-sloppy-imports src/deno.test.ts",
     "test:node": "vitest run src/index.test.ts"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "@hono/node-server": "^1.8.2"
