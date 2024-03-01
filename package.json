@@ -1,7 +1,7 @@
 {
   "name": "@mo36924/http-server",
   "type": "module",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "http-server",
   "author": "mo36924 <mo36924@users.noreply.github.com>",
   "license": "MIT",
@@ -15,7 +15,6 @@
       "types": "./dist/index.d.ts",
       "bun": "./dist/bun.js",
       "deno": "./dist/deno.js",
-      "node": "./dist/index.js",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs",
       "default": "./dist/index.js"
